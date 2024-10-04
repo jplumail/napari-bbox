@@ -3,9 +3,9 @@ requires = ["setuptools>=42.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "napari-bbox"
+name = "napari-bbox-spfluo"
 version = "0.0.7.post1"
-description = "A new layer for bounding boxes in 2+ dimensions"
+description = "A new layer for bounding boxes in 2+ dimensions. Fork of napari-bbox for spfluo-app needs."
 readme = "README.md"
 requires-python = ">=3.8"
 license = { file = "LICENSE" }
