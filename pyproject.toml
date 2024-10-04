@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=42.0.0", "wheel"]
+requires = ["setuptools>=42.0.0", "wheel", "setuptools-scm>=8"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "napari-bbox-spfluo"
-version = "0.0.7.post1"
+dynamic = ["version"]
 description = "A new layer for bounding boxes in 2+ dimensions. Fork of napari-bbox for spfluo-app needs."
 readme = "README.md"
 requires-python = ">=3.8"
@@ -53,6 +53,9 @@ napari-bbox = "napari_bbox:napari.yaml"
 
 [tool.setuptools.package-data]
 "*" = ["*.yaml", "*.svg", "*.qss"]
+
+[tool.setuptools_scm]
+root = "../.."
 
 [tool.black]
 line-length = 79
